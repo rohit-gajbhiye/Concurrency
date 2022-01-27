@@ -3,7 +3,7 @@ Concurrency is very important aspect of application design and architecture, Thi
 
 
 # What is Concurrency 
-Consider a microservice(which support Rest), If system does not support concurrency then each incoming request will be executed on at a time meaning a user will have to wait for sometime before all the request before his request has been served , We all know this is not the case , So whats actually happening , Each incoming request is running simulataneously with other that is called concurrency executing sub task simaltaneously.
+Consider a microservice(which support Rest), If system does not support concurrency then each incoming request will be executed one at a time meaning a user will have to wait for sometime before all the request before his request has been served , We all know this is not the case , So whats actually happening , Each incoming request is running simulataneously with other that is called concurrency executing sub task simaltaneously.
 
 But Wait Whats is Parallism then 
 # Parellelism
