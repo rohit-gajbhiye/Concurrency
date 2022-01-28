@@ -29,3 +29,14 @@ Go Scheduler is a program provided by go runtime whose sole purpose is to create
 4. OS thread will check if there is any task in queue it will execute or borrow tasks from another threds queue
 
 ![Untitled drawio (2)](https://user-images.githubusercontent.com/98384750/151479809-449ecce5-313e-4179-abeb-a179747124c6.png)
+
+Consider a example of microservice
+
+1. Application has an incoming request it creates a goroutine 
+2. scheduler adds goroutine to the pool seeing that there is no Os thread to execute goroutine, It creates and Os thread
+3. goroutine is added to Os threads queue and is executed 
+4. Now thread is not terminated it will be kept idle for configurable amount of time 
+5. Say in meantime another request came so 1 , 2 and 3 will be repeated 
+6. If there are lots of incoming request , Scheduler will keep creating OS thread and repeat 1 , 2 and 3
+
+NOTE - maximum number of thread scheduler can create is configurable ,but best practise is to create OS thread equal to the number os OS core to acheive maximum parellelism
