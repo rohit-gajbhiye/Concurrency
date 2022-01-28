@@ -16,11 +16,13 @@ Below is a simple golang service example which receives request and for every re
 
 We are saying that each request is a goroutine then what is this goroutine
 
-#Goroutine - Goroutine also called green thread or user space threads , We cannot call it as light weight thread as its not actually a thead , It actually is a small function or methods which is executed by Os thread , We can also see it as abstraction over thread.
+# Goroutine 
+Goroutine also called green thread or user space threads , We cannot call it as light weight thread as its not actually a thead , It actually is a small function or methods which is executed by Os thread , We can also see it as abstraction over thread.
 
-#Goroutines are very light weight as they dont have to maintain context or run queue , Its just a small peice of code which is looking to be executed. Go scheduler picks up Goroutines and assigns it to OS thread to get executed.
+Goroutines are very light weight as they dont have to maintain context or run queue , Its just a small peice of code which is looking to be executed. Go scheduler picks up Goroutines and assigns it to OS thread to get executed.
 
-Go Scheduler - Go Scheduler is a program provider by go runtime which manages all goroutine , What does manages means 
+# Go Scheduler 
+Go Scheduler is a program provider by go runtime which manages all goroutine , What does manages means 
 1. 
 
 ![Untitled drawio (2)](https://user-images.githubusercontent.com/98384750/151479809-449ecce5-313e-4179-abeb-a179747124c6.png)
