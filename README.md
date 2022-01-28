@@ -14,4 +14,8 @@ Below is a simple golang service example which receives request and for every re
 ![Untitled drawio](https://user-images.githubusercontent.com/98384750/150939789-14e6acab-398c-46e6-83b7-8f6e4b966383.png)
 
 
-GOROUTINE 
+We are saying that each request is a goroutine then what is this goroutine
+
+Goroutine - Goroutine also called green thread or user space threads , We cannot call it as light weight thread as its not actually a thead , It actually is a small function or methods which is executed by Os thread , We can also see it as abstraction over thread.
+
+Goroutines are very light weight as they dont have to maintain context or run queue , Its just a small peice of code which is looking to be executed. Go scheduler picks up Goroutines and assigns it to OS thread to get executed.
